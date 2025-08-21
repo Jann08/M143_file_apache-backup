@@ -77,6 +77,7 @@ Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB gro
 │   ├── cronjob.sh
 
 │   └── config.sh
+
 └── assets/                # Screenshots, etc
 
    └── Netzwerkplan.png
