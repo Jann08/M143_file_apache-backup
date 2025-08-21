@@ -63,14 +63,22 @@ Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB gro
 ##Projekt Struktur
 
 ├── README.md              # Diese Datei
+
 ├── docs/                  # Detaillierte Dokumentation
+
 │   ├── Doku.md
+
 │   ├── installationen.md
+
 │   └── wiederherstellung.md
+
 ├── scripts/               # Alle verwendeten Skripte
+
 │   ├── cronjob.sh
+
 │   └── config.sh
 └── assets/                # Screenshots, etc
+
     └── Netzwerkplan.png
 
 
