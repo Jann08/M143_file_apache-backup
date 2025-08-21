@@ -79,6 +79,6 @@ Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB gro
 │   └── config.sh
 └── assets/                # Screenshots, etc
 
-    └── Netzwerkplan.png
+   └── Netzwerkplan.png
 
 
