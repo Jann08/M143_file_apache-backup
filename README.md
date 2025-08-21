@@ -10,7 +10,7 @@ Eine vollautomatisierte, sichere und getestete Backup-Lösung für zwei Linux-Se
 Die Backups werden auf einem dritten, dedizierten **Backup-Server** mit **BorgBackup** gespeichert. Borg sorgt für effiziente, deduplizierte und versionierte Archive.
 
 ## Projektarchitektur
-Einfaches Drei-Server-Setup:
+Einfaches Drei-Server-Setup: alpine-standard-3.22.1-x86_64.iso
 - **`fileserver.vm.local`** (IP: `192.168.100.10`): Hostet NFS-Freigaben.
 - **`webserver.vm.local`** (IP: `192.168.100.11`): Hostet Apache-Websites.
 - **`backup.vm.local`** (IP: `192.168.100.20`): Dedizierter Backup-Server.
