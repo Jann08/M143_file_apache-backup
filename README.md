@@ -21,7 +21,7 @@ Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB gro
 
 ## MVP Aufgaben / Checkliste
 
-### Phase 0: Vorbereitung
+### Vorbereitung
 - [ ] **Netzwerk erstellen (Hostnet)
 - [ ] **Drei VMs erstellen** (`fileserver`, `webserver`, `backup`) mit festen IPs.
 - [ ] **Netzwerkkonnektivität testen** (z.B. `ping 192.168.100.10` vom `webserver` und `backup` aus).
