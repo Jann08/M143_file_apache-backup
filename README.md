@@ -60,7 +60,7 @@ Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB gro
 - [ ] **Cron Job durch System Timer ersetzen(moderner)**
 - [ ] **Automatisierte Konfiguration von vms durch Script oder Ansible**
 
-##NetPlan
+## NetPlan
 
 ![Network](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Network.png)
 
