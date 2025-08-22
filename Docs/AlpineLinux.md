@@ -14,7 +14,7 @@ Alpine Linux ist eine minimalistische, sicherheitsorientierte Linux-Distribution
 - **Geeignet für Server:** Praktisch als Server da nur das Minimale installiert ist.
 - **Rolling Release:** Stetig aktualisierte Pakete und Sicherheitsupdates.
 
-![NFS](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Alpine.png)
+![Alpine](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Alpine.png)
 
 ## Links
 
