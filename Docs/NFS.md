@@ -13,6 +13,6 @@ NFSv3 unterstütst asynchrone Schreibvorgänge. Das ermöglicht dem server die r
 Ausserdem ist es effizienter und man kann durchschnittlich auf 2GB Daten zugreifen durch 64Bit Dateigrösse.
 
 **`NFS version 4 (NFSv4)`**
-NFSv4 ist die neusste Version des NFS Prottokolls. Diese version kann durch Firewalls durch Arbeiten. Dazu wird TCP verwendet und die verbindung wird zwischen einer Anwendung und einer IP hergestellt. Bei Datenverlust werden nur die verlorenen Dateien erneut übertragen und der Server akzeptiert befehle über den TCP port. 
+NFSv4 ist die neusste Version des NFS Prottokolls. Diese version kann durch Firewalls durch Arbeiten. Dazu wird TCP verwendet und die verbindung wird zwischen einer Anwendung und einer IP hergestellt. Bei Datenverlust werden nur die verlorenen Dateien erneut übertragen und der Server akzeptiert befehle über den TCP port.
 
 ![NFS](imgs/NFS.png)
