@@ -11,9 +11,9 @@ Die Backups werden auf einem dritten, dedizierten **Backup-Server** mit **BorgBa
 
 ## Projektarchitektur
 Einfaches Drei-Server-Setup: alpine-standard-3.22.1-x86_64.iso
-- **`fileserver.vm.local`** (IP: `192.168.100.10`): Hostet NFS-Freigaben.
-- **`webserver.vm.local`** (IP: `192.168.100.11`): Hostet Apache-Websites.
-- **`backup.vm.local`** (IP: `192.168.100.20`): Dedizierter Backup-Server.
+- **`fileserver.vm.local`** (IP: `10.20.30.32`): Hostet NFS-Freigaben.
+- **`webserver.vm.local`** (IP: `10.20.30.?`): Hostet Apache-Websites.
+- **`backup.vm.local`** (IP: `10.20.30.?`): Dedizierter Backup-Server.
 
 Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB grossen Disc Partition.
 
@@ -29,16 +29,16 @@ Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB gro
 
 ### Phase 1: Service-Installation & Konfiguration
 
-#### `fileserver.vm.local` erstellen mit (IP: 10):
+#### `fileserver.vm.local` erstellen mit (IP: 10.20.30.32):
 - [ ] **Mit dem Host Netzwerk verbinden**
 - [ ] **NFS Server installieren:**
 
-#### `webserver.vm.local` erstellen mit (IP: 11):
+#### `webserver.vm.local` erstellen mit (IP: 10.20.30.?):
 - [ ] **Mit dem Host Netzwerk verbinden**
 - [ ] **NFS Client Installieren:**
 - [ ] **Apache2 Webserver installieren:**
 
-#### `backup.vm.local` erstellen mit (IP: 20):
+#### `backup.vm.local` erstellen mit (IP: 10.20.30.?):
 - [ ] **Backup Applikation Downloaden**
 - [ ] **Backup Verzeichnisse festlegen**
 
