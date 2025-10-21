@@ -4,16 +4,16 @@
 
 ## MVP Ziel (Minimum Viable Product)
 Eine vollautomatisierte, sichere und getestete Backup-Lösung für zwei Linux-Server einrichten:
-1.  Ein **Fileserver** (NFS)
+1.  Ein **Fileserver**
 2.  Ein **Webserver** (Apache)
 
-Die Backups werden auf einem dritten, dedizierten **Backup-Server** mit **BorgBackup** gespeichert. Borg sorgt für effiziente, deduplizierte und versionierte Archive.
+Die Backups werden auf einem dritten, dedizierten **Backup-Server** gespeichert.
 
 ## Projektarchitektur
-Einfaches Drei-Server-Setup: alpine-standard-3.22.1-x86_64.iso
-- **`fileserver.vm.local`** (IP: `10.20.30.32`): Hostet NFS-Freigaben.
-- **`webserver.vm.local`** (IP: `10.20.30.?`): Hostet Apache-Websites.
-- **`backup.vm.local`** (IP: `10.20.30.?`): Dedizierter Backup-Server.
+Einfaches Drei-Server-Setup: Debian Servers
+- **`filesrv`** (IP: `192.168.169.129`): Hostet den Filesrv.
+- **`websrv`** (IP: `192.168.169.130`): Hostet Apache-Websites.
+- **`backsrv`** (IP: `192.168.169.131`): Backup-Server.
 
 Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB grossen Disc Partition.
 
@@ -22,35 +22,34 @@ Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB gro
 ## MVP Aufgaben / Checkliste
 
 ### Vorbereitung
-- [ ] **Netzwerk erstellen (Hostnet)
-- [ ] **Drei VMs erstellen** (`fileserver`, `webserver`, `backup`) mit festen IPs.
-- [ ] **Netzwerkkonnektivität testen** (z.B. `ping 192.168.100.10` vom `webserver` und `backup` aus).
-- [ ] **Einen Schnappschuss von allen VMs** im sauberen Grundzustand machen. (KRITISCH FÜR FALLBACKS!)
+- [x] **Netzwerk erstellen (Hostnet)
+- [x] **Drei VMs erstellen** (`fileserver`, `webserver`, `backup`) mit festen IPs.
+- [x] **Netzwerkkonnektivität testen** (z.B. `ping 8.8.8.8` vom `webserver` und `backup` aus).
+- [x] **Einen Schnappschuss von allen VMs** im sauberen Grundzustand machen. (KRITISCH FÜR FALLBACKS!)
 
 ### Phase 1: Service-Installation & Konfiguration
 
-#### `fileserver.vm.local` erstellen mit (IP: 10.20.30.32):
-- [ ] **Mit dem Host Netzwerk verbinden**
-- [ ] **NFS Server installieren:**
+#### `fileserver.vm.local` erstellen mit (IP: 192.168.169.129):
+- [x] **Mit dem Host Netzwerk verbinden**
+- [x] **Backupclient downloaden**
 
-#### `webserver.vm.local` erstellen mit (IP: 10.20.30.?):
-- [ ] **Mit dem Host Netzwerk verbinden**
-- [ ] **NFS Client Installieren:**
-- [ ] **Apache2 Webserver installieren:**
+#### `webserver.vm.local` erstellen mit (IP: 192.168.169.130):
+- [x] **Mit dem Host Netzwerk verbinden**
+- [x] **Apache2 Webserver installieren:**
 
-#### `backup.vm.local` erstellen mit (IP: 10.20.30.?):
-- [ ] **Backup Applikation Downloaden**
-- [ ] **Backup Verzeichnisse festlegen**
+#### `backup.vm.local` erstellen mit (IP: 192.168.169.131):
+- [x] **Backup Applikation Downloaden**
+- [x] **Backup Verzeichnisse festlegen**
 
 #### `SSH Keys` Generieren für Passwort loser Zugriff auf den Backup Server:
-- [ ] **Key Pairs generieren**
-- [ ] **Die Mashcienen über die Keys verbinden**
+- [x] **Key Pairs generieren**
+- [x] **Die Maschienen über die Keys verbinden**
 
 #### `Cron` durch einen Cronjob das ganze backup automatisieren:
-- [ ] **Script Backup?**
+- [x] **Script Backup?**
 
 #### `Wiederherstellung` testen durch auf dem fileserver Daten wiederherstellen:
-- [ ] **Dateien vom Backup server auf den Fileserver wiederherstellen und auf vollständigkeit prüfen**
+- [x] **Dateien vom Backup server auf den Fileserver wiederherstellen und auf vollständigkeit prüfen**
 
 ## Erweiterungsmöglichkeiten
 - [ ] **Backups verschlüsseln**
