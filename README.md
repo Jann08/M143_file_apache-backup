@@ -52,11 +52,8 @@ Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB gro
 - [x] **Dateien vom Backup server auf den Fileserver wiederherstellen und auf vollständigkeit prüfen**
 
 ## Erweiterungsmöglichkeiten
-- [ ] **Backups verschlüsseln**
-- [ ] **2x Backup Server für Redundanz**
-- [ ] **Mailserver für monitoring benachrichtigung**
-- [ ] **Cloud Speichern**
-- [ ] **Cron Job durch System Timer ersetzen(moderner)**
+- [x] **2x Backup Server für Redundanz**
+- [x] **Cron Job durch System Timer ersetzen(moderner)**
 - [ ] **Automatisierte Konfiguration von vms durch Script oder Ansible**
 
 ## NetPlan
