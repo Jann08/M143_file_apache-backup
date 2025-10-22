@@ -58,6 +58,6 @@ Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB gro
 
 ## NetPlan
 
-![Network](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Network.png)
+![Network](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Diagramm3.png)
 
 
