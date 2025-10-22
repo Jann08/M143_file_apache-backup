@@ -50,12 +50,26 @@ Das Script auf den Backupservern verbindet sich per SSH zu den Servern. Es über
 
 Ich benutze rsync da es sehr effizient ist, es werden keine schon vorhandenen Daten übertragen und es giebt viele Optionen für anpassungen.
 
+### Verschlüsselung
 
+Ich habe im Nachhinein mein Backup Script angepasst so das es verschlüsselte backups macht, da dies sinnvol ist das man nicht alles direkt auslesen kann.
+Dazu habe ich das Script erweitert indem ich **`gnupg`** installiert habe und das Script so umgeschrieben das die daten zuerst in einen Temporären ordner verschoben werden und dann mit dem befehl: **`tar -czf - -C $TEMP_DIR . | gpg --encrypt --recipient $GPG_RECIPIENT --output /backup/encrypted/full_backup_$DATUM.tar.gz.gpg`** komprimiert und durch gnupg verschlüsselt werden. nach dem wird der Temporäre Ordner wieder gelöscht mit **`rm -rf`**.
+um das ganze zu entschlüsseln um nachher wie normal das backup wiederherzustellen verwende ich diesen command: **`gpg --decrypt /backup/encrypted/full_backup_2025-10-21_14-30.tar.gz.gpg | tar -xzf - -C /tmp/restore`**. Auch durch die verschlüsselung behalten die Dateiberechtigungen.
 
+Ich habe mich für eine Verschlüsselung entschieden da somit potenziell Sensible Geschäftsdaten sicher gespeichert werden können, und bei Diebstahl die Daten vor nicht autorisiertem zugriff geschützt sind.
+
+## Discord Bot
+
+Um zu sehen ob das Backup funktioniert hat Benutze ich einen Simplen Discord Bot der checkt ob es ein Update gab und wen es keins gab schreibt der bot eine Fehler nachricht im Discord Chat.
+
+![Botmsg](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Botmsg.png)
+
+### Cronjob
+Dieser Cronjob wird benutzt das um 3 uhr wen das Backup fertig ist das script gestartet wird mit dem der status des Backups gecheckt wird. 
+**`0 3 * * * /backup/check_backup.sh`**
 
 ## Cronjob
 Täglich um 2 uhr wird ein Backup der Server gestartet.
-
 **`0 2 * * * /backup/rsync_backup.sh`**
 
 Das Backup wird um 2 Uhr nachts gemacht da gibt es weniger auslastung auf den Servern perfekt für das Backup.
