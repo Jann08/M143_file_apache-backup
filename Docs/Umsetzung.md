@@ -40,7 +40,7 @@ Ich habe mich für das benutzen von SSH Keys auf grund dieser Punkte entschieden
 - **`Automatisierung`** Cronjobs können ohne Passworteingabe laufen
 - **`Sicherheit`** SSH Keys sind sicherer als Passwörter
 - **`Praktikabel`** Einmal einrichten, dauerhaft nutzbar
-- 
+
 # SSH Keys generieren
 Mit diesen commands habe ich das Key Pair erstellt und auf den File und web Server übertragen.
 **`ssh-keygen -t ed25519 -f ~/.ssh/backup_key -N ""`**
