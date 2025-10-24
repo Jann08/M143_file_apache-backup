@@ -1,0 +1,46 @@
+=== Rsync Backup mit Verschlüsselung gestartet: Fri Oct 24 11:53:12 CEST 2025 ===
+Temporäres Verzeichnis: /backup/temp_2025-10-24_11-53
+
+1. Rsync Fileserver...
+receiving incremental file list
+./
+config.properties
+geschaeftsdaten.txt
+backup_info.txt
+test
+dokumente/rechnungen/rechnung_jan.pdf
+dokumente/rechnungen/rechnung_feb.pdf
+datenbank/backups/mysql_backup.sql
+
+sent 46 bytes  received 10,829 bytes  4,350.00 bytes/sec
+total size is 10,703  speedup is 0.98
+
+2. Rsync Webserver...
+receiving incremental file list
+./
+index.html
+img/
+img/logo.png
+sent 1,002 bytes  received 3,412 bytes  9,328.00 bytes/sec
+total size is 1.2M  speedup is 1.41
+
+3. Backup Status vor Verschlüsselung:
+filesrv: 48K	/backup/fileserver/
+websrv: 16K	/backup/webserver/
+Gesamt: 64K	/backup/temp_2025-10-24_11-53
+
+4. Starte Verschlüsselung...
+gpg: encrypted with 4096-bit RSA key, ID 4F98D32B1234ABCD, created 2025-24-10
+      "jann.neururer@edu.tbz.ch"
+Verschlüsselung erfolgreich abgeschlossen
+Verschlüsselte Datei: /backup/encrypted/full_backup_2025-10-24_11-53.tar.gz.gpg
+Größe: 2.1M
+
+5. Bereinige temporäres Verzeichnis...
+rm: Entferne '/backup/temp_2025-10-24_11-53' ... erledigt.
+
+6. Lösche alte Backups (älter als 30 Tage)...
+find: '/backup/encrypted/': Keine Dateien älter als 30 Tage gefunden
+find: '/backup/logs/': Keine alten Logdateien gefunden
+
+=== Rsync Backup mit Verschlüsselung fertig: Fri Oct 24 11:53:51 CEST 2025 ===
