@@ -54,4 +54,4 @@ Ich habe mich dazu entschieden das ganze noch zu verschlüsseln da dies mehr sic
 
 - Script datei:
 
-![Backupscript](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Script backup full.png)
+![Backupscript](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Scriptbackupfull.png)
