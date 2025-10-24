@@ -43,5 +43,7 @@ Dieses Script Ist sehr minimal gehalten und führ das Loggin per SSH auf die Ser
 
 ![logklein](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/sentproof.png)
 
+- Script datei:
+
 ![Backupscript](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Backupscript.png)
 
