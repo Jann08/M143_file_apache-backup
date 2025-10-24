@@ -30,6 +30,10 @@ openssh-server: Ermöglicht mir sichere Verbindungen zwischen den Servern
 **`sudo apt install apache2`**
 apache2: habe ich gewählt da es ein sehr Zuverlässiger Webserver ist und es dazu Massenhaft an Dokumentationen gibt.
 
+### Nur auf Backupsrv
+
+**`sudo apt-get install rsync gnupg tar`**
+
 ## SSH Keys
 Ich habe mich für das benutzen von SSH Keys auf grund dieser Punkte entschieden:
 
