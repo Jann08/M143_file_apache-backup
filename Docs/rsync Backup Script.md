@@ -55,3 +55,19 @@ Ich habe mich dazu entschieden das ganze noch zu verschlüsseln da dies mehr sic
 - Script datei:
 
 ![Backupscript](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Scriptbackupfull.png)
+
+## Wiederherstellung der Daten
+
+### Entschlüsselung und Extraktion
+
+Mit diesen Beiden befehlen können die Backups wiederhergestellt werden: 
+
+- Fileserver-Backup
+**`gpg --decrypt /backup/encrypted/fileserver_2025-10-24_14-30.tar.gz.gpg | \
+ssh ladmin@192.168.169.129 "tar -xzf - -C /backup/restored/"`**
+
+- Webserver-Backup
+**`gpg --decrypt /backup/encrypted/full_backup_2025-01-21_14-30.tar.gz.gpg | \
+ssh ladmin@192.168.169.130 "tar -xzf - -C /var/www/restored/"`**
+
+Bei Ausführung dieser Befehle wird das Angewählte Backup direkt per SSH auf den Herkunfts Server zurückgeladen und entpackt.
