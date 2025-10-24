@@ -40,6 +40,7 @@ SSH-Zugriff konfigurieren
 ## Backup Script unverschlüsselt
 Dieses Script Ist sehr minimal gehalten und führ das Loggin per SSH auf die Server durch, kopiert die daten und Speichert sie auf den Backup Server. Dazu wird eine Kleine Log Datei geschrieben.
 - Output des Logs:
+
 ![logklein](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/sentproof.png)
 
 ![Backupscript](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Backupscript.png)
