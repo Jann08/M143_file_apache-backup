@@ -51,3 +51,7 @@ Dieses Script Ist sehr minimal gehalten und führ das Loggin per SSH auf die Ser
 ## Backup Script verschlüsselt
 Ich habe mich dazu entschieden das ganze noch zu verschlüsseln da dies mehr sicherheit gibt. Das erweiterte Script erstellt Folders, Loggt SSH ein Koppiert die Daten in den Temporären Folder verschlüsselt diese mit GPG, zieht diese auf Backupsrv und löscht den Temp folder. Jede aktion wird in die Logg datei geschrieben.
 - [Log der verschlüsselten version](rsync_2025-10-24_11-53.log)
+
+- Script datei:
+
+![Backupscript](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Script backup full.png)
