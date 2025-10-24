@@ -47,7 +47,8 @@ Mit diesen commands habe ich das Key Pair erstellt und auf den File und web Serv
 **`ssh-copy-id -i ~/.ssh/backup_key ladmin@192.168.169.129`**
 **`ssh-copy-id -i ~/.ssh/backup_key ladmin@192.168.169.130`**
 
-## Backup script erstellen
+##[Backup script erstellen](rsync%20Backup%20Script.md#backup-script-unverschlüsselt)
+
 Speicherort: /backup/rsync_backup.sh
 
 Das Script auf den Backupservern verbindet sich per SSH zu den Servern. Es überträgt nur Daten die Geändert wurden, und Protokolliert alles in den Logs und die Dateiberechtigungen bleiben die selben.
@@ -56,7 +57,7 @@ Ich benutze rsync da es sehr effizient ist, es werden keine schon vorhandenen Da
 
 ![Backupscript](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Backupscript.png)
 
-### Verschlüsselung
+###[Verschlüsseltes Backup](rsync%20Backup%20Script.md#backup-script-verschlüsselt) 
 
 Ich habe im Nachhinein mein Backup Script angepasst so das es verschlüsselte backups macht, da dies sinnvol ist das man nicht alles direkt auslesen kann.
 Dazu habe ich das Script erweitert indem ich **`gnupg`** installiert habe und das Script so umgeschrieben das die daten zuerst in einen Temporären ordner verschoben werden und dann mit dem befehl: **`tar -czf - -C $TEMP_DIR . | gpg --encrypt --recipient $GPG_RECIPIENT --output /backup/encrypted/full_backup_$DATUM.tar.gz.gpg`** komprimiert und durch gnupg verschlüsselt werden. nach dem wird der Temporäre Ordner wieder gelöscht mit **`rm -rf`**.
