@@ -41,8 +41,8 @@ Ich habe mich für das benutzen von SSH Keys auf grund dieser Punkte entschieden
 - **`Sicherheit`** SSH Keys sind sicherer als Passwörter
 - **`Praktikabel`** Einmal einrichten, dauerhaft nutzbar
 - 
-# Auf Backup Server die ssh keys erstellen und direkt auf die anderen 2 server übertragen.
-
+# SSH Keys generieren
+Mit diesen commands habe ich das Key Pair erstellt und auf den File und web Server übertragen.
 **`ssh-keygen -t ed25519 -f ~/.ssh/backup_key -N ""`**
 **`ssh-copy-id -i ~/.ssh/backup_key ladmin@192.168.169.129`**
 **`ssh-copy-id -i ~/.ssh/backup_key ladmin@192.168.169.130`**
