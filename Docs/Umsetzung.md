@@ -68,6 +68,7 @@ um das ganze zu entschlüsseln um nachher wie normal das backup wiederherzustell
 Ich habe mich für eine Verschlüsselung entschieden da somit potenziell Sensible Geschäftsdaten sicher gespeichert werden können, und bei Diebstahl die Daten vor nicht autorisiertem zugriff geschützt sind.
 
 ## Discord Bot
+[Discord Bot](Backup%20Monitoring%20Script%20mit%20Discord%20Bot.md#backup-monitoring-script-mit-discord-bot)
 
 Um zu sehen ob das Backup funktioniert hat Benutze ich einen Simplen Discord Bot der checkt ob es ein Update gab und wen es keins gab schreibt der bot eine Fehler nachricht im Discord Chat.
 
