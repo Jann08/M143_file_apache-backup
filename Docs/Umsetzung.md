@@ -50,6 +50,8 @@ Das Script auf den Backupservern verbindet sich per SSH zu den Servern. Es über
 
 Ich benutze rsync da es sehr effizient ist, es werden keine schon vorhandenen Daten übertragen und es giebt viele Optionen für anpassungen.
 
+![Backupscript](https://raw.githubusercontent.com/Jann08/M143_nfs-apache-backup/main/imgs/Backupscript.png)
+
 ### Verschlüsselung
 
 Ich habe im Nachhinein mein Backup Script angepasst so das es verschlüsselte backups macht, da dies sinnvol ist das man nicht alles direkt auslesen kann.
