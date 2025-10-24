@@ -26,4 +26,4 @@
 
 ## Voraussetzungen
 - Installierte Pakete
-[Zur Installationsanleitung](Docs/Umsetzung.md#installierte-packages)
+[Installierte Packete](Umsetzung.md#installierte-packages)
