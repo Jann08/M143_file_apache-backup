@@ -26,7 +26,7 @@
 **Grund:**
 - **Zeitersparnis:** Automatisierte Backups und Statusprüfungen laufen ohne manuelle Eingriffe.
 - **Effizienz:** Backups werden nachts durchgeführt, wenn die Server weniger ausgelastet sind, was die Performance der Systeme während der Arbeitszeit nicht beeinträchtigt.
-- **Regelmäßigkeit:** Tägliche Backups bieten einen guten Schutz gegen Datenverluste und stellen sicher, dass immer eine aktuelle Kopie der Daten verfügbar ist.
+- **Regelmässigkeit:** Tägliche Backups bieten einen guten Schutz gegen Datenverluste und stellen sicher, dass immer eine aktuelle Kopie der Daten verfügbar ist.
 
 ## 6. Discord Bot für Monitoring
 **Grund:**
