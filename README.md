@@ -61,6 +61,7 @@ Alle Server sind minimale Linux-VMs ohne GUI, Alle vms laufen auf einem 90GB gro
 - [Discord Bot](Docs/Backup%20Monitoring%20Script%20mit%20Discord%20Bot.md)
 - [Backup Script](Docs/rsync%20Backup%20Script.md)
 - [Log Dateien](Docs/rsync_2025-10-24_11-53.log)
+- [Entscheidung](Docs/Entscheidungen.md)
 
 ## NetPlan
 
